@@ -1,27 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <title>MUN chapter of BNM Institute of Technology</title>
+    <link name="icon" href="images/Mun_logo_2.png" type="image/png" />
+
     <style>
-        .navbar-custom {
-            background-color: #A7727D;
+      body {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        color: #5a5a5a;
+      }
+
+      .navbar-custom {
+        background-color: #6096b4;
+      }
+
+      .carousel {
+        margin-bottom: 4rem;
+      }
+
+      .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+      }
+
+      .carousel-item {
+        min-height: 500px;
+        background-color: #777;
+      }
+
+      #myCarousel {
+        background-color: #a2a2a2;
+      }
+
+      .carousel-inner > .item > img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 500px;
+      }
+
+      .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .marketing .col-lg-4 p {
+        margin-right: 0.75rem;
+        margin-left: 0.75rem;
+      }
+      .featurette-divider {
+        margin: 5rem 0;
+      }
+
+      .featurette-heading {
+        letter-spacing: -0.05rem;
+      }
+
+      @media (min-width: 40em) {
+        .carousel-caption p {
+          margin-bottom: 1.25rem;
+          font-size: 1.25rem;
+          line-height: 1.4;
         }
 
+        .featurette-heading {
+          font-size: 50px;
+        }
+      }
 
+      @media (min-width: 62em) {
+        .featurette-heading {
+          margin-top: 7rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
     </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-custom">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md fixed-top navbar-custom">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="images/MUN-nobg.png" alt="bnm-mun Logo" width=auto height="65">
-            Bnm-MUN
+            <img
+              src="images/Mun_logo_2.png"
+              alt="bnm-mun Logo"
+              width="auto"
+              height="55"
+            />
+            BNMIT-MUN
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -35,18 +164,176 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Committees</a>
               </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
+    </header>
+
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img
+              class="center"
+              width= "100%"
+              height="auto"
+              src="images/event_1/day_2_award.jpg"
+              aria-hidden="true"
+            />
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Mun fundamentals</h1>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Maxime mollitia,
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item active">
+            <img
+              class="center"
+              width="100%"
+              height= "auto"
+              src="images/event_1/day_1_members2.jpg"
+              aria-hidden="true"
+            />
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Mun_fundamentals</h1>
+                <p>
+                  Some representative placeholder content for the second slide
+                  of the carousel.
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              class="center"
+              width="100%"
+              height="auto"
+              src="images/members/team_2.jpg"
+
+              aria-hidden="true"
+            />
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Meet the team</h1>
+                <p>
+                  Some representative placeholder content for the third slide of
+                  this carousel.
+                </p>
+                <p><a class="btn btn-lg btn-primary" href="#">About us</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container marketing">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <img
+                  class="rounded-circle"
+                  src="images/Mun_logo_2.png"
+                  width="140"
+                  height="140"
+                  role="img"
+                />
+                <h2 class="fw-normal">The Model United Nations Club</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maxime mollitia,</p>
+                    <p><a class="btn btn-secondary" href="#">Learn more&raquo;</a></p>
+              </div>
+              <div class="col-lg-4">
+                <img
+                  class="rounded-circle"
+                  src="images/bnm_logo.png"
+                  width="140"
+                  height="140"
+                  role="img"
+                />
+                <h2 class="fw-normal">BNM Institute of Technology</h2>
+                <p>B.N.M. Institute of Technology is a autonomous private technical co-educational engineering education institution located in Bangalore, Karnataka, India.</p>
+                <p>
+                  <a class="btn btn-secondary" href="https://www.bnmit.org">Visit site &raquo;</a>
+                </p>
+              </div>
+          <div class="col-lg-4">
+            <img
+                  class="rounded-circle"
+                  src="images/org-un-circle-01.png"
+                  width="140"
+                  height="140"
+                  role="img"
+                />
+            <h2 class="fw-normal">The United Nations</h2>
+            <p>And lastly this, the third column of representative placeholder content.</p>
+            <p><a class="btn btn-secondary" href="https://www.un.org/en/">Visit site &raquo;</a></p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row --> 
+    
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+
+
+    </main>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
